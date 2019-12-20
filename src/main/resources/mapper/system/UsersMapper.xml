@@ -4,8 +4,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.depthmind.mybatis.mapper.UsersMapper">
     
-    <sql id="selectAll">
+    <select id="selectAll" resultType="Users">
         select *
-		from users
-    </sql>
+		from sys_user
+    </select>
 </mapper>
